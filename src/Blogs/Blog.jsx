@@ -29,7 +29,7 @@ const Blog = ({blog,handleAddToBookmarks,handleMarkAsRead}) => {
                 </div>
 
                 <div className="flex items-center gap-2">
-                    <h1>{reading_time}</h1>
+                    <h1>{reading_time} min read</h1>
                     <button onClick={() => handleAddToBookmarks(blog)}><img className="w-6 h-6" src="https://img.icons8.com/?size=80&id=cMGn5OSRI9br&format=gif" alt="" /></button>
                 </div>
             </div>
@@ -38,7 +38,7 @@ const Blog = ({blog,handleAddToBookmarks,handleMarkAsRead}) => {
 
             <p>{hashtag}</p>
 
-            <button onClick={( ) =>handleMarkAsRead(reading_time)} className="text-blue-600 underline">Mark as read</button>
+            <button onClick={( ) =>handleMarkAsRead(reading_time,id)} className="text-blue-600 underline">Mark as read</button>
             
         </div>
     );
