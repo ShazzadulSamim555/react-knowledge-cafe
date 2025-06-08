@@ -6,7 +6,7 @@
     "author": "Emily Johnson",
     "author_img": "https://randomuser.me/api/portraits/women/44.jpg",
     "posted_date": "2025-06-01",
-    "reading_time": "7 min read",
+    "reading_time": 7,
     "hashtag": ["#React", "#JavaScript", "#WebDevelopment"]
   },
   {
@@ -16,7 +16,7 @@
     "author": "Michael Smith",
     "author_img": "https://randomuser.me/api/portraits/men/45.jpg",
     "posted_date": "2025-05-28",
-    "reading_time": "5 min read",
+    "reading_time": 5,
     "hashtag": ["#AI", "#Technology", "#Future"]
   },
   {
@@ -26,7 +26,7 @@
     "author": "Sophia Davis",
     "author_img": "https://randomuser.me/api/portraits/women/68.jpg",
     "posted_date": "2025-05-25",
-    "reading_time": "4 min read",
+    "reading_time": 4,
     "hashtag": ["#Productivity", "#LifeHacks", "#TimeManagement"]
   },
   {
@@ -36,7 +36,7 @@
     "author": "James Lee",
     "author_img": "https://randomuser.me/api/portraits/men/39.jpg",
     "posted_date": "2025-05-20",
-    "reading_time": "6 min read",
+    "reading_time": 6,
     "hashtag": ["#Blogging", "#Tech", "#Writing"]
   },
   {
@@ -46,7 +46,7 @@
     "author": "Olivia Martinez",
     "author_img": "https://randomuser.me/api/portraits/women/52.jpg",
     "posted_date": "2025-05-15",
-    "reading_time": "8 min read",
+    "reading_time": 8,
     "hashtag": ["#TailwindCSS", "#CSS", "#Frontend"]
   }
 ]

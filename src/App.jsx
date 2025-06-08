@@ -1,4 +1,5 @@
 
+import { useState } from 'react'
 import './App.css'
 import Blogs from './Blogs/Blogs'
 import Bookmarks from './Bookmarks/Bookmarks'
@@ -6,13 +7,29 @@ import Header from './components/Header'
 
 function App() {
 
+  const [bookmarks,setBookmarks]=useState([]);
+  const [readingTime, setReadingTime] = useState(0);
+
+  const handleAddToBookmarks = (blog) => {
+    //console.log(blog);
+    const newBookmarks = [...bookmarks,blog];
+    setBookmarks(newBookmarks)
+  }
+
+  const handleMarkAsRead = (time) => {
+    //console.log('Mark as read',time);
+    const newReadingTime = (readingTime) + (time);
+    setReadingTime(newReadingTime);
+  }
+  
+
   return (
     <>
       <Header></Header>
 
       <div className='md:flex md:gap-5 md:m-10'>
-        <Blogs></Blogs>
-        <Bookmarks></Bookmarks>
+        <Blogs handleMarkAsRead={handleMarkAsRead} handleAddToBookmarks={handleAddToBookmarks}></Blogs>
+        <Bookmarks readingTime={readingTime} bookmarks={bookmarks}></Bookmarks>
       </div>
     </>
   )
